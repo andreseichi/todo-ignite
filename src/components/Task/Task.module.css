@@ -18,6 +18,8 @@
 
 .task span {
   width: 100%;
+
+  transition: all 0.2s;
 }
 
 .task .checked {
@@ -41,6 +43,18 @@
 .checkmark {
   color: var(--blue-400);
   cursor: pointer;
+
+  transition: filter 0.2s;
+  animation: checkmark 0.3s;
+}
+
+@keyframes checkmark {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .checkmark:hover {
@@ -50,6 +64,9 @@
 .checkmarked {
   color: var(--purple-400);
   cursor: pointer;
+
+  transition: filter 0.2s;
+  animation: checkmark 0.3s;
 }
 
 .checkmarked:hover {
@@ -65,6 +82,8 @@
   justify-content: center;
 
   cursor: pointer;
+
+  transition: background 0.2s, color 0.2s;
 }
 
 .trashWrapper:hover {

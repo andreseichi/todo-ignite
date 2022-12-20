@@ -49,6 +49,8 @@
   line-height: 140%;
 
   cursor: pointer;
+
+  transition: filter 0.2s;
 }
 
 .wrapper button:hover {
