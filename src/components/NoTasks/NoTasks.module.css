@@ -1,0 +1,25 @@
+.noTasks {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  font-size: 1rem;
+  line-height: 22.4px;
+}
+
+.firstSpan {
+  margin-top: 1rem;
+}
+
+.noTasks > span {
+  font-weight: bold;
+}
+
+.noTasks > span + span {
+  font-weight: normal;
+}

@@ -1,0 +1,71 @@
+.task {
+  width: 100%;
+  min-height: 72px;
+  padding: 1rem;
+  background: var(--gray-500);
+  color: var(--gray-100);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.task span {
+  width: 100%;
+}
+
+.task .checked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.task + .task {
+  margin-top: 0.75rem;
+}
+
+.checkmark {
+  color: var(--blue-400);
+  cursor: pointer;
+}
+
+.checkmark:hover {
+  filter: brightness(0.6);
+}
+
+.checkmarked {
+  color: var(--purple-400);
+  cursor: pointer;
+}
+
+.checkmarked:hover {
+  filter: brightness(1.2);
+}
+
+.trashWrapper {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.trashWrapper:hover {
+  background: var(--gray-400);
+  border-radius: 4px;
+}
+
+.trashWrapper:hover .trash {
+  color: var(--danger);
+}
+
+.trash {
+  color: var(--gray-300);
+}
