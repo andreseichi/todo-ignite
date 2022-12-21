@@ -6,17 +6,14 @@ import { NoTasks } from "./components/NoTasks";
 import { Task } from "./components/Task";
 import { useState } from "react";
 
-function App() {
-  const tasksMock = [
-    { id: 1, title: "Tarefa 1", isCompleted: false },
-    {
-      id: 2,
-      title: "Tarefa 2",
-      isCompleted: true,
-    },
-  ];
+interface task {
+  id: number;
+  title: string;
+  isCompleted: boolean;
+}
 
-  const [tasks, setTasks] = useState(tasksMock);
+function App() {
+  const [tasks, setTasks] = useState([] as task[]);
   const [tasksTotal, setTasksTotal] = useState(tasks.length);
   const [tasksDone, setTasksDone] = useState(
     tasks.filter((task) => task.isCompleted).length
